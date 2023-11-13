@@ -1,0 +1,43 @@
+@import '../../styles/variables.scss';
+
+.client {
+    &_container {
+        grid-area: main;
+        overflow-y: auto;
+        padding: 1rem;
+        color: $color-black;
+    }
+
+    &_title {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-top: 3.75rem;
+    }
+}
+
+.font {
+    &_clients {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    &_loading {
+        display: block;
+        margin-top: 3.75rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .client_cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 1.8rem;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,37 @@
+@import '../../styles/variables.scss';
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    background-color: $color-card;
+
+    &_title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        >.card_icon {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.font {
+    &_text {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    &_email {
+        font-size: .75rem;
+    }
+
+    &_city {
+        padding: 0.6rem 0rem 0.6rem 0rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}

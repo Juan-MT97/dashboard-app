@@ -1,0 +1,25 @@
+@import '../../../../styles/variables.scss';
+
+.sidebar_item {
+    padding: 1.25rem;
+    font-size: 1.1rem;
+
+    >a {
+        text-decoration: none;
+        color: $color-white;
+        display: flex;
+        align-items: center;
+        gap: .3rem;
+    }
+
+    &:hover {
+        background-color: $color-black-20;
+        cursor: pointer;
+    }
+}
+
+.icon {
+    vertical-align: middle;
+    font-size: 1.6rem;
+    margin-right: .3rem;
+}
